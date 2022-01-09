@@ -1,9 +1,6 @@
-import type { NextPage } from "next";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Link from "src/Link";
+import { Box, Button, Container, Typography } from "@mui/material";
+import { NextPage } from "next";
+import Link from "next/link";
 
 const About: NextPage = () => {
   return (
@@ -21,9 +18,9 @@ const About: NextPage = () => {
           MUI v5 + Next.js with TypeScript example
         </Typography>
         <Box maxWidth="sm">
-          <Button variant="contained" component={Link} noLinkStyle href="/">
-            Go to the home page
-          </Button>
+          <Link href="/" passHref>
+            <Button variant="contained">Go to the home page</Button>
+          </Link>
         </Box>
       </Box>
     </Container>

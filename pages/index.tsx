@@ -1,8 +1,6 @@
-import type { NextPage } from "next";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import Link from "src/Link";
+import { Box, Container, Typography } from "@mui/material";
+import { NextPage } from "next";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
